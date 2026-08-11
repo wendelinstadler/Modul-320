@@ -2,10 +2,9 @@ package acountAplication;
 
 import java.util.Scanner;
 public class AcountAplication {
-
     public static void main(String[] args) {
+        Acount Konto = new Acount();
         System.out.println("Welcome to the account application");
-        double kontostand = 0;
         double amount = 0;
         String command = "";
         do {
@@ -16,18 +15,13 @@ public class AcountAplication {
                 System.out.println("To deposit, press +, to withdraw press -");
                 command = scanner.next();
                 if (command.equals("+")) {
-                    kontostand = deposit(kontostand, amount);
+                    Konto.deposit(amount);
                 } else if (command.equals("-")) {
-                    kontostand = withdraw(kontostand, amount);
+                    Konto.withdraw(amount);
                 }
             }
         } while (amount != 0);
-        System.out.println("Final balance:" + kontostand);
+        System.out.println("Final balance:" + Konto);
     }
-    public static double deposit(double kontostand, double amount){
-        return kontostand + amount;
-    }
-    public static double withdraw(double kontostand, double amount){
-        return kontostand - amount;
-    }
+
 }
