@@ -2,8 +2,8 @@ package acountAplication;
 
 import java.util.Scanner;
 public class AcountAplication {
-
     public static void main(String[] args) {
+        Acount Konto = new Acount();
         System.out.println("Welcome to the account application");
         Acount sparkonto = new Acount();
 
