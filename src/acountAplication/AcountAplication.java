@@ -5,7 +5,7 @@ public class AcountAplication {
 
     public static void main(String[] args) {
         System.out.println("Welcome to the account application");
-        Acount sparkonto = new Acount(100);
+        Acount sparkonto = new Acount();
 
 
         double amount = 0;

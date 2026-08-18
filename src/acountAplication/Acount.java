@@ -2,6 +2,10 @@ package acountAplication;
 
 public class Acount {
     private double balance;
+
+    public Acount(){
+    }
+
     public Acount(double balance){
         this.balance = balance;
     }
