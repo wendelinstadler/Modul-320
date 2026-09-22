@@ -13,6 +13,14 @@ public class car2 {
     protected double getCarPrice() {
         return preis;
     }
+
+    public double getPrice() {
+        return getCarPrice();
+    }
+
+    public String getModel() {
+        return model;
+    }
 }
 
 
